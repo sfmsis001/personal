@@ -103,6 +103,14 @@ header h1:hover::after {
   font-family: 'Roboto', sans-serif;
 }
 
+.about-image img {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Adjust the max-width as needed */
+  border-radius: 50%; /* Optional: to make the image circular */
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
 .about h2 {
   font-size: 2.5rem;
   text-align: center;
