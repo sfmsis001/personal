@@ -1,9 +1,15 @@
 export default function Home() {
-    const [showPDF, setShowPDF] = useState(false);
+   const showCV = () => {
+    // Create an anchor element
+    const link = document.createElement('a');
+    // Set the href to the path of your CV file
+    link.href = '/assets/Siso_Sifumba_CV_Final.pdf';
+    // Set the download attribute with the desired filename
+    link.download = 'Siso_Sifumba_CV_Final.pdf';
+    // Programmatically click the link to trigger the download
+    link.click();
+};
 
-    const togglePDF = () => {
-        setShowPDF(!showPDF);
-    };
 
     return (
         <div className="content">
