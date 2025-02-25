@@ -1,13 +1,22 @@
 export default function Home() {
     const showCV = () => {
-        // Create an anchor element
-        const link = document.createElement('a');
-        // Set the href to the path of your CV file
-        link.href = '/assets/Siso_Sifumba_CV_Final.pdf';
-        // Set the download attribute with the desired filename
-        link.download = 'Siso_Sifumba_CV_Final.pdf';
-        // Programmatically click the link to trigger the download
-        link.click();
+        try {
+            // Create an anchor element
+            const link = document.createElement('a');
+            // Set the href to the path of your CV file
+            link.href = '/assets/Siso_Sifumba_CV_Final.pdf';
+            // Set the download attribute with the desired filename
+            link.download = 'Siso_Sifumba_CV_Final.pdf';
+
+            // Check if the link is correctly created
+            console.log("Attempting to download CV...");
+            
+            // Programmatically click the link to trigger the download
+            link.click();
+        } catch (error) {
+            console.error("Error in downloading CV:", error);
+            alert("There was an error downloading the CV.");
+        }
     };
 
     return (
