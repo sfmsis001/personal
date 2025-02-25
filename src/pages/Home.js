@@ -12,7 +12,7 @@ export default function Home() {
             <h3>My CV</h3>
             <p>View my CV to learn more about my experience and skills:</p>
             <div className="cv-link">
-                <a href="./assets/Siso_Sifumba_CV_Final.pdf" target="_blank" rel="noopener noreferrer" className="cv-download">
+                <a href="./assets/Siso_Sifumba_CV_Final.pdf" target="_blank">
                     <button>View CV</button>
             </a>
             </div>
