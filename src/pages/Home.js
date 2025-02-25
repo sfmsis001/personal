@@ -4,13 +4,10 @@ export default function Home() {
             // Create an anchor element
             const link = document.createElement('a');
             // Set the href to the path of your CV file
-            link.href = '/assets/Siso_Sifumba_CV_Final.pdf';
+            link.href = `${process.env.PUBLIC_URL}/assets/Siso_Sifumba_CV_Final.pdf`;
             // Set the download attribute with the desired filename
             link.download = 'Siso_Sifumba_CV_Final.pdf';
 
-            // Check if the link is correctly created
-            console.log("Attempting to download CV...");
-            
             // Programmatically click the link to trigger the download
             link.click();
         } catch (error) {
