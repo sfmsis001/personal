@@ -1,7 +1,8 @@
 export default function Home() {
-    const showCV = () => {
-        // Open the CV PDF file in a new window
-        window.open('/assets/Siso_Sifumba_CV_Final.pdf', '_blank');
+    const [showPDF, setShowPDF] = useState(false);
+
+    const togglePDF = () => {
+        setShowPDF(!showPDF);
     };
 
     return (
