@@ -1,15 +1,14 @@
 export default function Home() {
-   const showCV = () => {
-    // Create an anchor element
-    const link = document.createElement('a');
-    // Set the href to the path of your CV file
-    link.href = '/assets/Siso_Sifumba_CV_Final.pdf';
-    // Set the download attribute with the desired filename
-    link.download = 'Siso_Sifumba_CV_Final.pdf';
-    // Programmatically click the link to trigger the download
-    link.click();
-};
-
+    const showCV = () => {
+        // Create an anchor element
+        const link = document.createElement('a');
+        // Set the href to the path of your CV file
+        link.href = '/assets/Siso_Sifumba_CV_Final.pdf';
+        // Set the download attribute with the desired filename
+        link.download = 'Siso_Sifumba_CV_Final.pdf';
+        // Programmatically click the link to trigger the download
+        link.click();
+    };
 
     return (
         <div className="content">
@@ -24,9 +23,8 @@ export default function Home() {
             <h3>My CV</h3>
             <p>View my CV to learn more about my experience and skills:</p>
             <div className="cv-link">
-                <button onClick={showCV}>View CV</button>
+                <button onClick={showCV}>Download CV</button>
             </div>
         </div>
     );
 }
-
