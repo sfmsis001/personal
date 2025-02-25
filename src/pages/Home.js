@@ -1,4 +1,9 @@
 export default function Home() {
+    const showCV = () => {
+        // Open the CV PDF file in a new window
+        window.open('/assets/Siso_Sifumba_CV_Final.pdf', '_blank');
+    };
+
     return (
         <div className="content">
             <h2>Welcome</h2>
@@ -12,9 +17,7 @@ export default function Home() {
             <h3>My CV</h3>
             <p>View my CV to learn more about my experience and skills:</p>
             <div className="cv-link">
-                <a href="./assets/Siso_Sifumba_CV_Final.pdf" target="_blank">
-                    <button>View CV</button>
-            </a>
+                <button onClick={showCV}>View CV</button>
             </div>
         </div>
     );
