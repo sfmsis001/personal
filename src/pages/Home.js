@@ -10,8 +10,8 @@ export default function Home() {
             <p>Explore my work to see how I blend technical expertise with creative problem-solving to make an impact in the digital world.</p>
             
             <h3>My CV</h3>
-            <p>Download my CV to learn more about my experience and skills:</p>
-            <a href="/Siso_Sifumba_CV_Final.pdf" download className="cv-download">Download CV</a>
+            <p>View my CV to learn more about my experience and skills:</p>
+            <a href="/mnt/data/Siso_Sifumba_CV_Final.pdf" target="_blank" rel="noopener noreferrer" className="cv-download">View CV</a>
         </div>
     );
 }
