@@ -588,17 +588,28 @@ form{
 
 /* Footer - Make it static (always at bottom) */
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: var(--primary);
-  padding: 10px 0;
+  background-color: rgba(59, 100, 107, 0.747); /* Semi-transparent black background */
+  color: white; /* Text color */
   text-align: center;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 0; /* Padding for top and bottom */
+  position: relative; /* Ensure it's positioned correctly */
+  bottom: 0; /* Aligns footer to the bottom */
+  width: 100%; /* Full width of the viewport */
+}
+
+.footer-content p {
+  margin: 0; /* Removes default margin */
+  padding-bottom: 10px; /* Space between the text and nav */
+}
+
+footer nav a {
+  color: white; /* Link color */
+  margin: 0 10px; /* Margin between links */
+  text-decoration: none; /* No underline */
+}
+
+footer nav a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 /* CV Link Styles */
